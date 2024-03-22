@@ -43,6 +43,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="urH-yw-JWG" kind="show" id="06G-Qr-ZPp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-kf-MSQ">
                                 <rect key="frame" x="67" y="284" width="259" height="36"/>
@@ -96,11 +99,11 @@
             <objects>
                 <viewController id="urH-yw-JWG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0EV-a0-zvY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="cND-l6-T9Q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-C8-bKT">
                                 <rect key="frame" x="0.0" y="89" width="414" height="74.666666666666686"/>
@@ -167,17 +170,29 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sr-QM-U3K" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="743" width="382" height="55"/>
+                                <rect key="frame" x="16" y="708" width="382" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39978279970000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="FZd-fB-kSg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4M-gq-c8o">
+                                <rect key="frame" x="0.0" y="10" width="53" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="4dc-i6-d6Y"/>
+                                    <constraint firstAttribute="width" constant="53" id="e1s-vm-LR0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton"/>
+                                <connections>
+                                    <segue destination="pDL-OR-tEc" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="GQd-nM-1Es"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YkS-xO-NBP"/>
@@ -192,14 +207,18 @@
                             <constraint firstItem="A8s-Mh-cIt" firstAttribute="top" secondItem="XmO-C8-bKT" secondAttribute="bottom" constant="60" id="RUR-jn-NdV"/>
                             <constraint firstItem="cND-l6-T9Q" firstAttribute="trailing" secondItem="YkS-xO-NBP" secondAttribute="trailing" id="SAI-bO-pGm"/>
                             <constraint firstItem="cND-l6-T9Q" firstAttribute="top" secondItem="0EV-a0-zvY" secondAttribute="top" id="VKv-WN-k5Z"/>
+                            <constraint firstItem="T4M-gq-c8o" firstAttribute="leading" secondItem="0EV-a0-zvY" secondAttribute="leading" id="Znb-n3-Yve"/>
                             <constraint firstItem="YkS-xO-NBP" firstAttribute="trailing" secondItem="A8s-Mh-cIt" secondAttribute="trailing" constant="16" id="a2I-c1-7pq"/>
                             <constraint firstItem="YkS-xO-NBP" firstAttribute="trailing" secondItem="9Sr-QM-U3K" secondAttribute="trailing" constant="16" id="c2j-wX-ynm"/>
                             <constraint firstAttribute="bottom" secondItem="cND-l6-T9Q" secondAttribute="bottom" id="sFj-kY-yCY"/>
+                            <constraint firstItem="T4M-gq-c8o" firstAttribute="top" secondItem="0EV-a0-zvY" secondAttribute="top" constant="10" id="uRA-tV-djK"/>
                             <constraint firstItem="cND-l6-T9Q" firstAttribute="leading" secondItem="YkS-xO-NBP" secondAttribute="leading" id="zkA-pj-3zE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c1s-tr-4lA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ac5-ed-8sj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pDL-OR-tEc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="851.14503816793888" y="11.971830985915494"/>
         </scene>
@@ -318,6 +337,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
