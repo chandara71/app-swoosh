@@ -20,6 +20,7 @@ class LeagueVC: UIViewController {
     
     @IBAction func onMenTapped(_ sender: Any) {
         selectLeague(leagueType: "men")
+        print("Mens")
     }
     
     @IBAction func onWomenTapped(_ sender: Any) {
@@ -43,6 +44,12 @@ class LeagueVC: UIViewController {
     func selectLeague(leagueType: String) {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
     }
     
 
