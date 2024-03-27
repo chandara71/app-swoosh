@@ -19,6 +19,7 @@
 		62C890092BAD326000A55CC1 /* app_swooshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C890082BAD326000A55CC1 /* app_swooshUITests.swift */; };
 		62C8900B2BAD326000A55CC1 /* app_swooshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8900A2BAD326000A55CC1 /* app_swooshUITestsLaunchTests.swift */; };
 		62C890192BAD392300A55CC1 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C890182BAD392300A55CC1 /* BorderButton.swift */; };
+		62EC29392BB4809D0049C59A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC29382BB4809D0049C59A /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		62C890082BAD326000A55CC1 /* app_swooshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_swooshUITests.swift; sourceTree = "<group>"; };
 		62C8900A2BAD326000A55CC1 /* app_swooshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_swooshUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		62C890182BAD392300A55CC1 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		62EC29382BB4809D0049C59A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		62AF6B4E2BB1DD2800E3734C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62EC29382BB4809D0049C59A /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				62C88FE82BAD325E00A55CC1 /* AppDelegate.swift in Sources */,
 				62C88FEA2BAD325E00A55CC1 /* SceneDelegate.swift in Sources */,
 				62C890192BAD392300A55CC1 /* BorderButton.swift in Sources */,
+				62EC29392BB4809D0049C59A /* Player.swift in Sources */,
 				62AF6B522BB1DE9500E3734C /* SkillVC.swift in Sources */,
 				62AF6B502BB1DE5B00E3734C /* LeagueVC.swift in Sources */,
 			);
